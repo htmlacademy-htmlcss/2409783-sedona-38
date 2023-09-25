@@ -115,6 +115,82 @@
           <button class="button reset-button" type="reset">Сбросить</button>
         </form>
       </header>
+      <section class="catalog-products">
+        <h2 class="visually-hidden">Результаты поиска</h2>
+        <p>Найдено гостиниц: 38</p>
+        <select class="select-priority" aria-label="Сортировка">
+          <option value="cheap">Сначала дешёвое</option>
+          <!--Этой опции нет в разметке. Добавлено для проверки работы.-->
+          <option value="expensive">Сначала дорогое</option>
+        </select>
+        <a class="button current-button" href="#">
+          <span class="visually-hidden">Показать карточки</span>
+        </a>
+        <a class="button" href="#">
+          <span class="visually-hidden">Показать слайд-шоу</span>
+        </a>
+        <a href="#" class="button">
+          <span class="visually-hidden">Показать списком</span>
+        </a>
+        <ul class="product-list">
+          <li class="product-card">
+            <img class="product-card-image" src="#" alt="">
+            <h2 class="product-card-title">Amara Resort & Spa</h2>
+            <span class="product-card-property-type">Гостиница</span>
+            <span class="product-card-price">От 4000 ₽</span>
+            <a class="product-card-link" href="#">подробнее</a>
+            <button class="button" type="button">в избранное</button>
+            <p>Рейтинг: 8,5</p>
+          </li>
+          <li class="product-card">
+            <img class="product-card-image" src="#" alt="">
+            <h2 class="product-card-title">Villas at Poco Diablo</h2>
+            <span class="product-card-property-type">Гостиница</span>
+            <span class="product-card-price">От 5000 ₽</span>
+            <a class="product-card-link" href="#">подробнее</a>
+            <button class="button selected-card-button" type="button">в избранном</button>
+            <p>Рейтинг: 9,2</p>
+          </li>
+          <li class="product-card">
+            <img class="product-card-image" src="#" alt="">
+            <h2 class="product-card-title">Desert Quail Inn</h2>
+            <span class="product-card-property-type">Гостиница</span>
+            <span class="product-card-price">От 2500 ₽</span>
+            <a class="product-card-link" href="#">подробнее</a>
+            <button class="button" type="button">в избранное</button>
+            <p>Рейтинг: 6,9</p>
+          </li>
+          <li class="product-card">
+            <img class="product-card-image" src="#" alt="">
+            <h2 class="product-card-title">GreenTree Inn</h2>
+            <span class="product-card-property-type">Гостиница</span>
+            <span class="product-card-price">От 1500 ₽</span>
+            <a class="product-card-link" href="#">подробнее</a>
+            <button class="button" type="button">в избранное</button>
+            <p>Рейтинг: 5,0</p>
+          </li>
+        </ul>
+        <ul class="pagination">
+          <li class="pagination-item">
+            <a class="pagination-link pagination-current">1</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link">2</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link">3</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link">4</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link dots">...</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link">10</a>
+          </li>
+        </ul>
+      </section>
       <section class="subscribe catalog-subscribe">
         <h2 class="visually-hidden">Подписка на рассылку</h2>
         <p>Подпишитесь на рассылку</p>
