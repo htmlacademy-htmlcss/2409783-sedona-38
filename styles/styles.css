@@ -47,6 +47,11 @@ body {
   line-height: 21px;
 }
 
+.breadcrumbs-link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
 .catalog-filter-title {
   font-size: 20px;
   font-weight: 700;
@@ -57,6 +62,21 @@ body {
 .catalog-filter-item {
   font-size: 18px;
   line-height: 23px;
+}
+
+.price,
+.price-input {
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.price-input {
+  font-weight: 700;
+}
+
+.price-input::placeholder {
+  color: #000000;
 }
 
 
@@ -190,6 +210,12 @@ body {
   border: none;
 }
 
+.email-input {
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+
 /* Catalog Products*/
 
 .select-priority {
@@ -232,6 +258,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 /* Pagination */
