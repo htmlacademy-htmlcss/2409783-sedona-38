@@ -72,11 +72,14 @@ body {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  max-width: 470px;
+  align-items: flex-start;
 }
 
 .navigation-user {
   margin: 0;
   margin-right: 20px;
+  max-width: 135px;
 }
 
 .navigation-user .navigation-link {
@@ -86,6 +89,8 @@ body {
 
 .logo-link {
   margin-right: 28px;
+  width: 138px;
+  overflow: hidden;
 }
 
 .navigation-link {
@@ -96,7 +101,7 @@ body {
   text-decoration: none;
 
   display: block;
-  padding: 20px 16px;
+  padding: 22px 12px;
 }
 
 .favorite-number {
@@ -106,6 +111,7 @@ body {
 }
 
 .button {
+  font-family: inherit;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
@@ -255,6 +261,7 @@ body {
 }
 
 .price-input {
+  font-family: inherit;
   font-weight: 700;
   width: 85px;
   padding: 12px 20px;
@@ -340,7 +347,8 @@ body {
 
 .advantages-item {
   background-color: rgba(131, 179, 211, 0.12);
-  padding: 112.5px 85px;
+  padding: 112px 85px;
+  padding-top: 113px;
 }
 
 .services-item {
@@ -407,7 +415,7 @@ body {
   padding: 103px 85px;
 }
 
-.advantages-item-wide:nth-child(5) {
+.advantages-item-reverse {
   flex-direction: row-reverse;
 }
 
@@ -415,7 +423,6 @@ body {
 
 .search {
   text-align: center;
-  width: 592;
   padding: 96px 304px;
 }
 
@@ -479,6 +486,7 @@ body {
 }
 
 .email-input {
+  font-family: inherit;
   font-size: 18px;
   line-height: 24px;
   color: #000000;
@@ -499,6 +507,7 @@ body {
 
 .sorting-container {
   display: flex;
+  align-items: flex-start;
   margin-bottom: 40px;
 }
 
@@ -506,6 +515,7 @@ body {
   align-self: center;
   margin: 0;
   margin-right: auto;
+  max-width: 450px;
 }
 
 .select-priority {
@@ -522,6 +532,8 @@ body {
 
 .view-buttons-list {
   display: flex;
+  flex-wrap: wrap;
+  max-width: 170px;
   gap: 8px;
   list-style: none;
   margin: 0;
@@ -530,8 +542,8 @@ body {
 
 .filter-button {
   display: block;
-  min-width: 24px;
-  min-height: 20px;
+  min-width: 22px;
+  min-height: 18px;
   padding: 14px 12px;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
@@ -559,7 +571,7 @@ body {
 }
 
 .product-card {
-  width: 297px;
+  width: 298px;
   padding: 20px;
   border-radius: 4px;
   border: 1px solid #e6e6e6;
@@ -669,12 +681,14 @@ body {
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
+  text-align: center;
   color: #ffffff;
   background-color: #82b3d3;
   text-decoration: none;
   border-radius: 4px;
   display: block;
-  padding: 12px 24px;
+  padding: 12px 5px;
+  min-width: 50px;
 }
 
 .pagination-current {
@@ -704,6 +718,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
+  max-width: 700px;
 }
 
 .social-list {
@@ -712,6 +727,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
+  width: 150px;
 }
 
 .social-link {
@@ -719,4 +735,10 @@ body {
   min-height: 40px;
   display: block;
   padding: 0 10px;
+}
+
+.footer-developer-logo {
+  width: 150px;
+  display: flex;
+  justify-content: flex-end;
 }
