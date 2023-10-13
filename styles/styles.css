@@ -89,7 +89,7 @@ body {
 
 .logo-link {
   margin-right: 28px;
-  width: 138px;
+  width: 140px;
   overflow: hidden;
 }
 
@@ -101,7 +101,7 @@ body {
   text-decoration: none;
 
   display: block;
-  padding: 22px 12px;
+  padding: 20px 16px;
 }
 
 .favorite-number {
@@ -122,6 +122,7 @@ body {
   text-decoration: none;
   padding: 8px 50px;
   align-self: center;
+  cursor: pointer;
 }
 
 .sign-in-button {
@@ -204,6 +205,8 @@ body {
   line-height: 23px;
   margin: 0;
   margin-bottom: 16px;
+  display: flex;
+  align-items: center;
 }
 
 .catalog-filter-group {
@@ -214,11 +217,24 @@ body {
 
 .facilities-group,
 .property-type-group {
-  width: 151px;
+  width: 150px;
 }
 
 .facilities-group {
   margin-right: 70px;
+}
+
+.facilities-input,
+.property-type-input {
+  margin: 0;
+  margin-right: 16px;
+  width: 20px;
+  height: 20px;
+  padding: 3px;
+}
+
+.facilities-input {
+  border-radius: 4px;
 }
 
 .property-type-group {
@@ -228,6 +244,8 @@ body {
 .price-group {
   width: 288px;
   margin-right: 70px;
+  display: flex;
+  gap: 2px;
 }
 
 .buttons-wrap {
@@ -237,6 +255,7 @@ body {
 }
 
 .reset-button {
+  width: 191px;
   background: none;
   border: none;
   display: flex;
@@ -260,11 +279,19 @@ body {
   color: #000000;
 }
 
+.price {
+  margin: 0;
+  margin-right: 20px;
+}
+
 .price-input {
   font-family: inherit;
   font-weight: 700;
-  width: 85px;
+  width: 60px;
   padding: 12px 20px;
+  padding-right: 10px;
+  border: none;
+  border-radius: 4px 0 0 4px;
 }
 
 .price-input::placeholder {
@@ -523,8 +550,8 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: inherit;
-  width: 252px;
-  padding: 14px 20px;
+  width: 292px;
+  padding: 12px 18px;
   margin-right: 70px;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
@@ -542,8 +569,8 @@ body {
 
 .filter-button {
   display: block;
-  min-width: 22px;
-  min-height: 18px;
+  min-width: 20px;
+  min-height: 16px;
   padding: 14px 12px;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
@@ -571,15 +598,23 @@ body {
 }
 
 .product-card {
-  width: 298px;
-  padding: 20px;
+  width: 300px;
+  padding: 19px;
   border-radius: 4px;
   border: 1px solid #e6e6e6;
+  display: grid;
+  grid-template-columns: 140px 140px;
+  grid-template-rows: auto auto 37px 37px;
+  row-gap: 16px;
+  column-gap: 20px;
 }
 
 .product-card-image {
+  display: block;
   margin: 0;
   margin-bottom: 16px;
+  max-width: 300px;
+  object-fit: contain;
 }
 
 .filter-button {
@@ -588,6 +623,7 @@ body {
 
 .product-card-link {
   text-decoration: none;
+  grid-column: 1/-1;
 }
 
 .product-card-title {
@@ -596,14 +632,6 @@ body {
   line-height: 28px;
   color: #000000;
   margin: 0;
-  margin-bottom: 16px;
-}
-
-.product-card-buttons {
-  margin: 0;
-  margin-bottom: 16px;
-  display: flex;
-  justify-content: space-between;
 }
 
 .more-button {
@@ -630,23 +658,14 @@ body {
   white-space: nowrap;
 }
 
-.product-card-information {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 16px;
-}
-
 .product-card-property-type,
 .product-card-price {
   font-size: 18px;
   line-height: 21px;
 }
 
-.ratings-container {
-  display: flex;
-  justify-content: space-between;
-  margin: 0;
-  padding: 0;
+.product-card-price {
+  text-align: right;
 }
 
 .hotel-stars {
@@ -727,18 +746,18 @@ body {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  width: 150px;
+  width: 142px;
 }
 
 .social-link {
   min-width: 27px;
   min-height: 40px;
   display: block;
-  padding: 0 10px;
+  padding: 5px 10px;
 }
 
 .footer-developer-logo {
-  width: 150px;
+  width: 115px;
   display: flex;
   justify-content: flex-end;
 }
