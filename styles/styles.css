@@ -67,6 +67,7 @@ body {
 
 .navigation-list {
   margin: 0;
+  margin-left: 170px;
   padding: 0;
   margin-right: auto;
   list-style: none;
@@ -88,6 +89,7 @@ body {
 }
 
 .logo-link {
+  position: absolute;
   margin-right: 28px;
   width: 140px;
   overflow: hidden;
@@ -272,6 +274,11 @@ body {
   justify-content: center;
 }
 
+.price-container {
+  position: relative;
+  width: 143px;
+}
+
 .price,
 .price-input {
   font-size: 18px;
@@ -280,18 +287,20 @@ body {
 }
 
 .price {
+  opacity: 0.3;
   margin: 0;
   margin-right: 20px;
+  position: absolute;
+  top: 12px;
+  right: 0;
 }
 
 .price-input {
   font-family: inherit;
   font-weight: 700;
-  width: 60px;
+  width: 103px;
   padding: 12px 20px;
-  padding-right: 10px;
   border: none;
-  border-radius: 4px 0 0 4px;
 }
 
 .price-input::placeholder {
