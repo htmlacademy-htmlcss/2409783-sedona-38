@@ -59,6 +59,7 @@ body {
 
 .page-header {
   padding: 0 70px;
+  position: relative;
 }
 
 .navigation {
@@ -90,8 +91,11 @@ body {
 
 .logo-link {
   position: absolute;
+  left: 70px;
+  top: 0;
   margin-right: 28px;
   width: 140px;
+  height: 70px;
   overflow: hidden;
 }
 
@@ -613,7 +617,6 @@ body {
   border: 1px solid #e6e6e6;
   display: grid;
   grid-template-columns: 140px 140px;
-  grid-template-rows: auto auto 37px 37px;
   row-gap: 16px;
   column-gap: 20px;
 }
