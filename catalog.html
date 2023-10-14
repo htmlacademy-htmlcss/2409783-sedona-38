@@ -12,7 +12,7 @@
       <header class="page-header" data-test="header">
         <nav class="navigation">
           <a class="logo-link" href="index.html">
-            <img class="logo" src="images/sedona-logo.svg" width="138" height="64" alt="Логотип Sedona.">
+            <img class="logo" src="images/sedona-logo.svg" width="140" height="70" alt="Логотип Sedona.">
           </a>
           <ul class="navigation-list">
             <li class="navigation-item">
@@ -59,22 +59,16 @@
               <legend class="catalog-filter-title">Инфраструктура:</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
-                  <label class="facilities">
-                    <input class="facilities-input" type="checkbox" name="swimming-pool" checked>
-                    Бассейн
-                  </label>
+                  <input class="facilities-input" type="checkbox" name="swimming-pool" id="swimming-pool" checked>
+                  <label class="facilities" for="swimming-pool">Бассейн</label>
                 </li>
                 <li class="catalog-filter-item">
-                  <label class="facilities">
-                    <input class="facilities-input" type="checkbox" name="parking" checked>
-                    Парковка
-                  </label>
+                  <input class="facilities-input" type="checkbox" name="parking" id="parking" checked>
+                  <label class="facilities" for="parking">Парковка</label>
                 </li>
                 <li class="catalog-filter-item">
-                  <label class="facilities">
-                    <input class="facilities-input" type="checkbox" name="wi-fi">
-                    Wi-Fi
-                  </label>
+                  <input class="facilities-input" type="checkbox" name="wi-fi" id="wi-fi">
+                  <label class="facilities" for="wi-fi">Wi-Fi</label>
                 </li>
               </ul>
             </fieldset>
@@ -82,34 +76,28 @@
               <legend class="catalog-filter-title">Тип жилья:</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
-                  <label class="property-type">
-                    <input class="property-type-input" type="radio" name="housing-type" value="hotel" checked>
-                    Гостиница
-                  </label>
+                  <input class="property-type-input" type="radio" name="housing-type" id="hotel" value="hotel" checked>
+                  <label class="property-type" for="hotel">Гостиница</label>
                 </li>
                 <li class="catalog-filter-item">
-                  <label class="property-type">
-                    <input class="property-type-input" type="radio" name="housing-type" value="motel">
-                    Мотель
-                  </label>
+                  <input class="property-type-input" type="radio" name="housing-type" id="motel" value="motel">
+                  <label class="property-type" for="motel">Мотель</label>
                 </li>
                 <li class="catalog-filter-item">
-                  <label class="property-type">
-                    <input class="property-type-input" type="radio" name="housing-type" value="apartament">
-                    Апартаменты
-                  </label>
+                  <input class="property-type-input" type="radio" name="housing-type" id="apartament" value="apartament">
+                  <label class="property-type" for="apartament">Апартаменты</label>
                 </li>
               </ul>
             </fieldset>
             <fieldset class="catalog-filter-group price-group">
               <legend class="catalog-filter-title">Стоимость, ₽:</legend>
               <div class="price-container min-price-container">
-                <label class="price" for="price-min">от</label>
                 <input class="price-input" type="text" name="price-min" placeholder="0" id="price-min">
+                <label class="price" for="price-min">от</label>
               </div>
               <div class="price-container max-price-container">
-                <label class="price" for="price-max">до</label>
                 <input class="price-input" type="text" name="price-max" placeholder="9000" id="price-max">
+                <label class="price" for="price-max">до</label>
               </div>
             </fieldset>
             <div class="buttons-wrap">
@@ -152,20 +140,14 @@
                   alt="Звёздное небо в расщелине гор.">
                 <h2 class="product-card-title">Amara Resort & Spa</h2>
               </a>
-              <div class="product-card-information">
-                <span class="product-card-property-type">Гостиница</span>
-                <span class="product-card-price">От 4000 ₽</span>
+              <span class="product-card-property-type">Гостиница</span>
+              <span class="product-card-price">От 4000 ₽</span>
+              <a class="button more-button" href="#">подробнее</a>
+              <button class="button favourite-card-button-add" type="button">в избранное</button>
+              <div class="hotel-stars four-stars">
+                <span class="visually-hidden">4 звезды</span>
               </div>
-              <div class="product-card-buttons">
-                <a class="button more-button" href="#">подробнее</a>
-                <button class="button favourite-card-button-add" type="button">в избранное</button>
-              </div>
-              <div class="ratings-container">
-                <div class="hotel-stars four-stars">
-                  <span class="visually-hidden">4 звезды</span>
-                </div>
-                <p class="hotel-rating">Рейтинг: <span>8,5</span></p>
-              </div>
+              <p class="hotel-rating">Рейтинг: <span>8,5</span></p>
             </li>
             <li class="product-card">
               <a class="product-card-link" href="#">
@@ -173,20 +155,14 @@
                   alt="Радуга над горным хребтом.">
                 <h2 class="product-card-title">Villas at Poco Diablo</h2>
               </a>
-              <div class="product-card-information">
-                <span class="product-card-property-type">Гостиница</span>
-                <span class="product-card-price">От 5000 ₽</span>
+              <span class="product-card-property-type">Гостиница</span>
+              <span class="product-card-price">От 5000 ₽</span>
+              <a class="button more-button" href="#">подробнее</a>
+              <button class="button favourite-card-button" type="button">в избранном</button>
+              <div class="hotel-stars four-stars">
+                <span class="visually-hidden">4 звезды</span>
               </div>
-              <div class="product-card-buttons">
-                <a class="button more-button" href="#">подробнее</a>
-                <button class="button favourite-card-button" type="button">в избранном</button>
-              </div>
-              <div class="ratings-container">
-                <div class="hotel-stars four-stars">
-                  <span class="visually-hidden">4 звезды</span>
-                </div>
-                <p class="hotel-rating">Рейтинг: <span>9,2</span></p>
-              </div>
+              <p class="hotel-rating">Рейтинг: <span>9,2</span></p>
             </li>
             <li class="product-card">
               <a class="product-card-link" href="#">
@@ -194,20 +170,14 @@
                   alt="Горы на фоне голубого неба.">
                 <h2 class="product-card-title">Desert Quail Inn</h2>
               </a>
-              <div class="product-card-information">
-                <span class="product-card-property-type">Гостиница</span>
-                <span class="product-card-price">От 2500 ₽</span>
+              <span class="product-card-property-type">Гостиница</span>
+              <span class="product-card-price">От 2500 ₽</span>
+              <a class="button more-button" href="#">подробнее</a>
+              <button class="button favourite-card-button-add" type="button">в избранное</button>
+              <div class="hotel-stars three-stars">
+                <span class="visually-hidden">3 звезды</span>
               </div>
-              <div class="product-card-buttons">
-                <a class="button more-button" href="#">подробнее</a>
-                <button class="button favourite-card-button-add" type="button">в избранное</button>
-              </div>
-              <div class="ratings-container">
-                <div class="hotel-stars three-stars">
-                  <span class="visually-hidden">3 звезды</span>
-                </div>
-                <p class="hotel-rating">Рейтинг: <span>6,9</span></p>
-              </div>
+              <p class="hotel-rating">Рейтинг: <span>6,9</span></p>
             </li>
             <li class="product-card">
               <a class="product-card-link" href="#">
@@ -215,20 +185,14 @@
                   alt="Горы на фоне звездного неба.">
                 <h2 class="product-card-title">GreenTree Inn</h2>
               </a>
-              <div class="product-card-information">
-                <span class="product-card-property-type">Гостиница</span>
-                <span class="product-card-price">От 1500 ₽</span>
+              <span class="product-card-property-type">Гостиница</span>
+              <span class="product-card-price">От 1500 ₽</span>
+              <a class="button more-button" href="#">подробнее</a>
+              <button class="button favourite-card-button-add" type="button">в избранное</button>
+              <div class="hotel-stars two-stars">
+                <span class="visually-hidden">2 звезды</span>
               </div>
-              <div class="product-card-buttons">
-                <a class="button more-button" href="#">подробнее</a>
-                <button class="button favourite-card-button-add" type="button">в избранное</button>
-              </div>
-              <div class="ratings-container">
-                <div class="hotel-stars two-stars">
-                  <span class="visually-hidden">2 звезды</span>
-                </div>
-                <p class="hotel-rating">Рейтинг: <span>5,0</span></p>
-              </div>
+              <p class="hotel-rating">Рейтинг: <span>5,0</span></p>
             </li>
           </ul>
           <ul class="pagination">
