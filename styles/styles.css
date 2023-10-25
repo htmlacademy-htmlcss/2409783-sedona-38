@@ -537,9 +537,11 @@ body {
 }
 
 .price-input {
-  width: 103px;
-  padding: 12px 20px;
   font-weight: 700;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 12px 20px;
+  padding-right: 45px;
 }
 
 /* Hero */
@@ -1277,18 +1279,19 @@ body {
 
 .modal-search-input {
   font-weight: 700;
-  width: 400px;
   padding: 12px 20px;
   padding-right: 60px;
   border-radius: 4px;
-  grid-area: input;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 .modal-input-container {
   position: relative;
+  grid-area: input;
 }
 
-.date-icon::before {
+.modal-input-container::before {
   position: absolute;
   width: 20px;
   height: 20px;
@@ -1296,7 +1299,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   content: "";
-  right: -20px;
+  right: 20px;
   opacity: 0.3;
   top: 50%;
   transform: translateY(-50%);
@@ -1466,6 +1469,7 @@ body {
 }
 
 .find-button {
+  font-size: 20px;
   background-color: #82b3d3;
   border-radius: 10px;
   border: none;

@@ -195,7 +195,7 @@
       </footer>
       <div class="modal-container modal-container-close">
         <div class="modal modal-search">
-          <button class="modal-close-button">
+          <button class="modal-close-button" type="button">
             <span class="visually-hidden">Закрыть</span>
           </button>
           <section class="modal-content">
@@ -205,8 +205,7 @@
                 <label class="modal-search-group-title" for="check-in-date">Дата заезда:</label>
                 <div class="modal-input-container">
                   <input class="input-field modal-search-input" type="text" name="check-in-date"
-                    placeholder="27 апреля 2020">
-                  <span class="date-icon"></span>
+                    placeholder="27 апреля 2020" id="check-in-date" required>
                 </div>
                 <span class="legend-text error-message">Мы не можем отправить вас в прошлое.</span>
               </div>
@@ -214,8 +213,7 @@
                 <label class="modal-search-group-title" for="check-out-date">Дата выезда:</label>
                 <div class="modal-input-container">
                   <input class="input-field modal-search-input" type="text" name="check-out-date"
-                    placeholder="1 сентября 2023">
-                  <span class="date-icon"></span>
+                    placeholder="1 сентября 2023" id="check-out-date" required>
                 </div>
                 <span class="legend-text">На эти даты есть свободные номера. Пока есть.</span>
               </div>
@@ -229,13 +227,15 @@
                         <path d="M0 0L0 2L14 2V0L0 0Z" />
                       </svg>
                     </button>
-                    <input class="input-field people-amount-input" type="text" name="adult-amount" placeholder="2">
+                    <span class="visually-hidden">Уменьшить количество взрослых</span>
+                    <input class="input-field people-amount-input" type="text" name="adult-amount" placeholder="2" id="adult-amount" required>
                     <button class="people-amount-button people-amount-increase" type="button">
                       <svg class="increase-icon" width="14" height="14" viewBox="0 0 14 14" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" />
                       </svg>
                     </button>
+                    <span class="visually-hidden">Увеличить количество взрослых</span>
                   </div>
                 </div>
                 <div class="people-amount-count-container child-count">
@@ -256,13 +256,15 @@
                         <path d="M0 0L0 2L14 2V0L0 0Z" />
                       </svg>
                     </button>
-                    <input class="input-field people-amount-input" type="text" name="child-amount" placeholder="2">
+                    <span class="visually-hidden">Уменьшить количество детей</span>
+                    <input class="input-field people-amount-input" type="text" name="child-amount" placeholder="2" id="child-amount">
                     <button class="people-amount-button people-amount-increase" type="button">
                       <svg class="increase-icon" width="14" height="14" viewBox="0 0 14 14" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" />
                       </svg>
                     </button>
+                    <span class="visually-hidden">Увеличить количество детей</span>
                   </div>
                 </div>
               </div>
