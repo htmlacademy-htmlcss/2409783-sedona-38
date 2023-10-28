@@ -1274,8 +1274,6 @@ body {
 }
 
 .modal-input-container {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
   position: relative;
   grid-area: input;
 }
@@ -1295,8 +1293,6 @@ body {
 }
 
 .modal-search-group-title {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
@@ -1308,8 +1304,6 @@ body {
 }
 
 .legend-text {
-  -ms-grid-row: 3;
-  -ms-grid-column: 3;
   font-size: 16px;
   line-height: 21px;
   padding: 0 20px;
