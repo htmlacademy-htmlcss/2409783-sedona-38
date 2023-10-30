@@ -202,7 +202,7 @@ body {
 
 .catalog-header {
   background-image: url("../images/filter-background.jpg");
-  background-color: rgba(131, 179, 211, 0.2);
+  background-color: #3f5e72;
   background-size: cover;
   background-repeat: no-repeat;
   color: #ffffff;
@@ -389,6 +389,11 @@ body {
   background-color: #3f5e72;
   border-radius: 50%;
   content: "";
+}
+
+.facilities-input:focus + .facilities-mark,
+.property-type-input:focus + .property-type-mark {
+  outline: auto;
 }
 
 .property-type-group {
