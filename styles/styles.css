@@ -150,7 +150,7 @@ body {
   color: #ffffff;
   background-color: #7db54f;
   padding: 5px;
-  border-radius: 50%;
+  border-radius: 10px;
   position: absolute;
   right: 4px;
   top: 11px;
@@ -849,7 +849,7 @@ body {
 
 .select-priority {
   -webkit-appearance: none;
-          appearance: none;
+  appearance: none;
   font-family: inherit;
   font-size: 18px;
   line-height: 21px;

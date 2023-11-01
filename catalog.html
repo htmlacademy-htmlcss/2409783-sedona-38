@@ -117,7 +117,7 @@
                 <li class="catalog-filter-item">
                   <label class="property-type">
                     <input class="visually-hidden property-type-input" type="radio" name="housing-type" id="apartament"
-                      value="apartament">
+                      value="apartment">
                     <span class="filter-mark property-type-mark"></span>Апартаменты
                   </label>
                 </li>
@@ -156,7 +156,7 @@
           <h2 class="visually-hidden">Результаты поиска.</h2>
           <div class="sorting-container">
             <p class="headline">Найдено гостиниц: <span>38</span></p>
-            <select class="select-priority" aria-label="Сортировка">
+            <select class="select-priority" name="sorting-select" aria-label="Сортировка">
               <option value="cheap">Сначала дешевые</option>
               <!--Этой опции нет в разметке. Добавлено для проверки работы.-->
               <option value="expensive">Сначала дорогие</option>
@@ -267,7 +267,7 @@
           <p class="headline">Подпишитесь на рассылку</p>
           <p class="description">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-            <input class="input-field email-input" type="email" name="subscribe-email" placeholder="Ваш e-mail" required>
+            <input class="input-field email-input" type="email" name="subscribe-email" aria-label="Ввод e-mail для подписки на рассылку" placeholder="Ваш e-mail" required>
             <button class="button subscribe-button" type="submit">Подписаться</button>
           </form>
         </section>
